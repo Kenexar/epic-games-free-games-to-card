@@ -22,6 +22,7 @@ class Game:
 
 free_games = []
 
+
 def get_free_games():
     response = requests.get(
         "https://www.epicgames.com/store/de/browse?sortBy=releaseDate&sortDir=DESC&priceTier=tierFree&category=Game"
