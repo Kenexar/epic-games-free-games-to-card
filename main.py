@@ -22,7 +22,6 @@ class Game:
 
 free_games = []
 
-
 def get_free_games():
     response = requests.get(
         "https://www.epicgames.com/store/de/browse?sortBy=releaseDate&sortDir=DESC&priceTier=tierFree&category=Game"
@@ -67,7 +66,7 @@ def game_add_shopping_cart():
 
         end = time.time()
         print(f" [{end - start:.2f}]")
-        # browser.quit()
+        browser.quit()
 
 
 def main():
